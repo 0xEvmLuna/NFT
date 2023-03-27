@@ -8,7 +8,7 @@ require("dotenv").config()
 export default async function (hre: HardhatRuntimeEnvironment) {
 
   // Initialize the wallet.
-  const wallet = new Wallet("517a2ddd5f34f09aa835985ec24766115532bdf0a6d2db1c48bca949d746fd6f");
+  const wallet = new Wallet("<PRIVATE_KEY>");
                              
   // Create deployer object and load the artifact of the contract we want to deploy.
   const deployer = new Deployer(hre, wallet);

@@ -12,7 +12,7 @@ export default async function (hre: HardhatRuntimeEnvironment) {
                              
   // Create deployer object and load the artifact of the contract we want to deploy.
   const deployer = new Deployer(hre, wallet);
-  const artifact = await deployer.loadArtifact("Spectraluxe");
+  const artifact = await deployer.loadArtifact("Fornaxia");
 
   // Deposit some funds to L2 in order to be able to perform L2 transactions.
   const deploymentFee = await deployer.estimateDeployFee(artifact, []);

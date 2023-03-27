@@ -16,7 +16,7 @@ module.exports = {
       url: "https://zksync2-testnet.zksync.dev", // URL of the zkSync network RPC
       ethNetwork: "https://eth-goerli.g.alchemy.com/v2/8pjvTLWK2Cr0bCf04Ih4IlkLRq5o82UO", 
       zksync: true,
-      accounts: [`0x517a2ddd5f34f09aa835985ec24766115532bdf0a6d2db1c48bca949d746fd6f`],
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
       verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification'
     },
   },
